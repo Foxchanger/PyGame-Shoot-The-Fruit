@@ -11,8 +11,8 @@ def place_apple ():
     apple.x = randint(10,800)
     apple.y = randint (10,600)
 
-def on_mousedown (pos):
-    if apple.colliderpoint(pos):
+def on_mouse_down (pos):
+    if apple.collidepoint(pos):
         print("Good Shot !")
         place_apple()
     else:
